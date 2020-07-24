@@ -1,3 +1,6 @@
+:root{
+  --blue: rgb(44, 97, 177);
+}
 *{
   padding:0;
   margin:0;
@@ -15,8 +18,7 @@ body{
    -webkit-font-smoothing: antialiased !important;
     background-image: url(../assets/bg1.jpg);
     background-size:cover;
-    background-position: center;
-    
+    background-position: center;  
 }
 
 #app{
@@ -31,6 +33,7 @@ body{
 
 .header-content{
   width: 100%;
+  min-width: 1280px;
   padding: 0 2%;
   padding-top:20px;
 }
@@ -115,6 +118,7 @@ body{
 
 section{
   width: 100%;
+  min-width: 1280px;
   padding: 0 2%;
 }
 
@@ -165,3 +169,99 @@ section .conteudo{
   cursor: pointer;
 }
 
+.sessao1{
+  width: 100%;
+  min-width: 1280px;
+  padding:0 2%;
+  background-color: #fff;
+  margin-top:20px;
+}
+
+.sessao1-title{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  
+  padding:20px;
+  
+  
+}
+
+.sessao1 >.container .sessao1-title h2{
+  background-color:#ccc;
+  width: 100%;
+  font-size:30px;
+  color:var(--blue);
+  line-height: 40px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border:1px solid black;
+  border-radius:30px;
+}
+
+
+.sessao1 >.container .sessao1-title h2:hover{
+  transition:2s;
+  text-shadow: 1px 1px 1px black;
+  opacity: 0.9;
+  cursor:pointer;
+}
+
+.cards{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top:50px;
+}
+
+.card{
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+
+.card h3{
+  background-color:rgb(44, 97, 177);
+  text-align: center;
+  padding:20px 10px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color:white;
+
+}
+
+.card label{
+  display: block;
+  margin: 15px 0;
+  font-size:18px;
+  line-height: 28px;
+  padding: 0 10px;
+}
+
+.card form{
+  background-color:#bbb;
+  padding: 40px 8px;
+}
+
+.card form p{
+  text-align: center;
+  border-top:1px solid black;
+  font-size:20px;
+  line-height: 30px;
+  font-weight: 300;
+  padding:10px;
+  font-weight: 300;
+
+}
+
+.card form p strong{
+  color:green;
+  margin-right: 3px;
+ 
+}
