@@ -10,3 +10,56 @@ html,body{
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased;
 }
+
+.container{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header-content{
+  width: 100%;
+  padding: 10px 2%;
+}
+
+.header-content > .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-content  > .container >.logo{
+  width: 150px;
+  height: 80px;
+  background-image: url('../assets/img/logoHotel.jpg');
+  background-size:100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.header-content nav ul{
+  list-style-type: none;
+  margin-top:25px;
+}
+
+.header-content nav ul li{
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.header-content nav li a{
+ text-decoration: none;
+ color:black;
+ font-weight: 300;
+}
+
+.header-content nav li a:hover{
+  transition: 0.8s;
+  color: rgba(13, 139, 34, 0.87)
+}
+
+
+
+
