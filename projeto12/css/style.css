@@ -117,3 +117,64 @@ html,body{
   font-weight: bold;
   cursor: pointer;
 }
+
+.sessao1{
+  width: 100%;
+  padding:40px  2% 0 2%;
+}
+
+.sessao1-content{
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+
+}
+
+.sessao1-content h2{
+  padding: 14px 0;
+  text-align: center;
+  font-size:39px;
+  line-height: 49px;
+}
+
+.sessao1-content p{
+  text-align: center;
+  font-size:18px;
+  line-height: 28px;
+}
+
+.sessao1-content .line{
+  margin:40px auto 10px auto;
+  height: 2px;
+  width: 300px;
+  background-color:black;
+}
+
+.sessao2{
+  width: 100%;
+  padding:10px 2%;
+  margin:40px 0;
+}
+
+.photos{
+  width:calc(100% + 32px);
+  margin: 0 auto;
+  display: flex;
+  flex-flow:  row wrap;
+}
+
+.img{
+  width: 40%;
+  margin: 8px;
+  height: 300px;
+  background-size:100% 100%;
+}
+
+.img2{
+  width: 55%;
+  height: 300px;
+  margin:8px;
+  background-size:100% 100%;
+
+
+}
