@@ -1,3 +1,7 @@
+:root{
+  --primary-color: rgba(13, 139, 34, 0.87)
+}
+
 *{
   padding:0;
   margin:0;
@@ -60,6 +64,56 @@ html,body{
   color: rgba(13, 139, 34, 0.87)
 }
 
+.bg{
+  padding: 10px 2%;
+  width: 100%;
+  min-height: 680px;
+  background-image: url('../assets/img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
+.bg-content{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:150px;
 
+}
 
+.bg-content h1{
+  font-size:50px;
+  line-height: 60px;
+  color:#fff;
+  padding:40px 0 15px 0;
+  font-weight: 300;
+}
+
+.bg-content h2{
+  font-size:30px;
+  line-height: 40px;
+  font-weight: 300;
+  color:#fff;
+}
+
+.bg-content button{
+  margin-top:20px;
+  width: 240px;
+  height: 50px;
+  padding:10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size:15px;
+  line-height: 25px;
+
+}
+
+.bg-content button:hover{
+  transition:0.8s;
+
+  background-color:rgb(171, 224, 65);
+  color:#fff;
+  font-weight: bold;
+  cursor: pointer;
+}
