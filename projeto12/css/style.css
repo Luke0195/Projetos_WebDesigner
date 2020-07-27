@@ -1,5 +1,7 @@
 :root{
-  --primary-color: rgba(13, 139, 34, 0.87)
+  --primary-color: rgba(13, 139, 34, 0.87);
+  --font-green: rgba(78, 168, 92, 0.87);
+
 }
 
 *{
@@ -175,6 +177,122 @@ html,body{
   height: 300px;
   margin:8px;
   background-size:100% 100%;
+}
+
+.sessao3{
+  width: 100%;
+  margin-top:40px;
+  padding:40px 0;
+  background-color:rgb(1, 39, 1);
+}
+
+.sessao3-content{
+  color:#fff;
+}
+
+.line2{
+  margin:20px auto 10px auto;
+  height: 2px;
+  width: 300px;
+  background-color:white;
+}
+
+.info-cards{
+  margin-top:80px;
+  display: flex;
+  color:#fff;
+}
+
+.info-card{
+  width: calc(100%/3);
+  text-align: center;
+  padding:0 30px;
+}
 
 
+.info-card h3{
+  margin:20px 0;
+  font-size:28px;
+  line-height: 38px;
+  font-weight: 300;
+  color:var(--font-green);
+}
+
+.info-card p{
+  margin-top:10px;
+  font-size:18px;
+  line-height: 28px;
+  text-align: center;
+}
+
+
+.sessao4{
+  width: 100%;
+  padding: 60px 2%;
+}
+
+.sessao4-content{
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.sessao4-content  h2{
+  margin: 20px 0;
+  font-size:38px;
+  line-height: 48px;
+  font-weight: 300;
+}
+
+.sessao4-content p{
+  font-size: 18px;
+  margin-top:40px;
+}
+
+.sessao4-content .line{
+  display: inline-block;
+  width:250px;
+  height: 2px;
+  background-color:black;
+}
+
+
+.sessao4-content .input{
+  margin:30px 0;
+}
+
+.sessao4-content .input input{
+  width: 70%;
+  height: 50px;
+  outline: 0;
+  padding-left: 8px;
+  font-size:18px; 
+}
+
+.sessao4-content .input button{
+  width: 25%;
+  height: 50px;
+  background-color:rgb(66, 66, 66);
+  border:0;
+  color:#fff;
+  font-size:18px;
+  margin-left: 8px;
+  border-radius: 8px;
+}
+
+.sessao4-content .input button:hover{
+  cursor: pointer;
+  transition:2s;
+  opacity: 0.8;
+  text-shadow: 1px 1px 2px black;
+}
+
+footer{
+  padding: 40px 2%;
+  width: 100%;
+  background-color:rgb(6, 48, 6);
+  text-align: center;
+  color:#fff;
+  font-weight: bold;
 }
