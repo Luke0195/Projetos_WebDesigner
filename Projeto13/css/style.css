@@ -1,0 +1,138 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Mulish',Arial, Helvetica, sans-serif;
+}
+
+html,body{
+  height: 100%;
+}
+
+.container{
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 2%;
+
+}
+
+.header-content{
+  width: 100%;
+  padding:20px 2%;
+  height: 520px;
+  background-image: url(../assets/images/bg.jpg);
+  background-size:100% 100%;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content .logo{
+  width: 130px;
+  height: 30px;
+  background-image: url(../assets/images/logo.png);
+  background-repeat: no-repeat;
+  
+}
+
+.header-content ul {
+  list-style-type: none;
+
+}
+
+.header-content ul li{
+
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.header-content ul li a{
+  text-decoration: none;
+  color:white;
+  text-shadow: 1px 1px 3px black;
+  font-size:18px;
+  line-height: 28px;
+}
+
+.header-content ul .button{
+  display: inline-block;
+  color:white;
+  font-size:18px;
+  text-shadow: 1px 1px 4px black;
+ 
+  
+}
+
+.header-content ul .button:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.content{
+  margin: 80px 5px;
+  width: 100%;
+  max-width: 600px;
+  color:#fff;
+  text-align: center;
+}
+
+.content h1{
+  padding: 20px 0 10px;
+  font-size:43px;
+  line-height: 53px;
+  color:white;
+  font-weight: normal;
+}
+
+.content p{
+  padding: 20px 0;
+  max-width: 500px;
+  display: inline-block;
+  font-size:20px;
+  line-height: 30px;
+  text-align: center
+}
+
+.campos{
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.campos input{
+  margin-right: 16px;
+  width: 250px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 30px;
+  border:none;
+  outline: 0;
+}
+
+.campos button{
+  margin-left:3px;
+  padding:10px;
+  height: 40px;
+  background-color:rgb(241, 73, 12);
+  border:none;
+  border-radius: 30px;
+  width: 190px;
+  font-size:15px;
+  text-transform: uppercase;
+  color:#fff;
+  font-weight: bold;
+}
+
+.campos button:hover{
+  transition:0.8s;
+  opacity: 0.9;
+  text-shadow: 1px 1px 3px black;
+  cursor: pointer;
+  
+}
