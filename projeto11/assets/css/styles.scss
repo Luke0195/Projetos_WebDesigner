@@ -1,0 +1,157 @@
+
+$white-color: #fff;
+$green-blue: rgb(5,88, 88);
+$dark-blue: rgb(44, 97, 177);
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro';
+}
+html{
+  font-size: 62.5%;
+}
+html,body{
+  height:100%;
+}
+
+body{
+  font-size:1.6rem;
+}
+
+.container{
+  width: 100%;
+  max-width: 1194px;
+  
+
+}
+
+.main-header{
+  width:100vw;
+  height:60rem;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)),
+   url('../img/bg1.jpg');
+  background-size:cover;
+  background-position:center;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+
+
+
+.menu-icons{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icons{
+  width:9rem;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.icons .img{
+  width:2rem;
+  height: 3rem;
+}
+
+.icons .insta{
+  width:1.8rem;
+}
+
+.icons .img:hover{
+  fill:#ccc;
+}
+
+.main-menu{
+  margin-top:4rem;
+  display: flex;
+  padding-bottom: 0.8rem;
+  border-bottom:0.1rem solid white;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+
+
+.main-menu p{
+  font-size:3rem;
+  line-height: 4rem;
+  color:$white-color;
+  font-weight: 300;
+}
+.main-menu ul{
+  list-style: none;
+  display: flex;
+  
+}
+
+.main-menu ul li a{
+ text-decoration:none;
+ margin: 0 8px;
+ color:$white-color;
+ font-size:1.8rem;
+ padding-bottom: 0.1rem;
+ display: flex;
+ align-items: center;
+ height:100%;
+ 
+}
+
+.main-menu ul li a:hover{
+  transition:0.8s;
+ text-shadow: 0.1rem 0.1rem 0.1rem #333;
+}
+
+.main-header-content{
+  margin-top:3rem;
+  width:100%;
+  max-width: 50rem;
+}
+
+.main-header-content h1{
+  font-weight: 300;
+  color:$white-color;
+  font-size:3.3rem;
+}
+
+.main-header-content h1 span{
+  color:$green-blue;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.main-header-content p{
+  margin-top:2rem;
+  color:$white-color;
+  font-size:1.5rem;
+  line-height: 2.5rem;
+  text-align:justify;
+}
+
+.main-header-content a{
+  display: inline-block;
+  background-color:$dark-blue;
+  text-decoration:none;
+  color:$white-color;
+  width:15rem;
+  padding:1rem 1.6rem;
+  font-size:1.5rem;
+  line-height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem  auto 0 auto;
+  font-weight: 600;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  transition: 0.9s;
+}
+
+.main-header-content a:hover{
+
+  filter: brightness(90%);
+}
+
+}
