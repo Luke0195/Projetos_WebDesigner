@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Sans:wght@300;400;600;700&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;1,200&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
 
+
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 html{
@@ -19,17 +23,48 @@ body {
   font-size:1.6rem;
 }
 
+.container{
+  overflow: hidden;
+}
+
+
+.hamburger{
+  width: 3rem;
+  height: 2rem;
+  position: fixed;
+  z-index: 100;
+  right: 4rem;
+  top:3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+
+ .line{
+   width:100%;
+   height: 0.1rem;
+   background-color:#fff;
+   box-shadow:  0.1rem 0.1rem 1px black;
+ }
+
+ 
+
+  
+  
+
+}
 header {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+
 
   .img-wraper {
     width: 100%;
     max-width: 100%;
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: rbga(0, 0, 0, 0.5);
   }
 
@@ -39,6 +74,7 @@ header {
     object-fit: cover; /* Nos ajudar na redução da tela inpedindo que a imagem fique retorcidad*/
     opacity: 0.9;
     animation:  zoom  8s;
+    
   }
 
   @keyframes zoom{
@@ -77,7 +113,7 @@ header {
    font-size:4rem;
    width: 100%;
    max-width: 45rem;
-   font-family:'Baloo Da 2','Courier New', Courier, monospace;
+   font-family:"Baloo Da 2",'Courier New', Courier, monospace;
    line-height: 5rem;
    text-shadow: 0.1rem 0.1rem 0.1rem black;
    font-weight: 200;
@@ -88,7 +124,7 @@ header {
 
   .banner p{
     text-align: left;
-    font-family: 'Josefin Sans','Courier New', Courier, monospace;
+    font-family: "Josefin Sans",'Courier New', Courier, monospace;
     margin-top:1.8rem;
     font-size:2.4rem;
     line-height: 3.4rem;
@@ -122,9 +158,89 @@ header {
   .banner button:hover{
     transition: 0.8s;
     filter: brightness(90%);
-    opacity: 0.9;
+    opacity: 0.9; 
   }
 }
 
 
+.sidebar{
+  width:25rem;
+  height:100vh;
+  background-color:rgba(255,255, 255,0.8);
+  position:fixed;
+  top:0;
+  right:-25rem;
+  transition: all 2s ease-out;
+}
+
+
+
+.sidebar.showmenu{
+  
+  right:0;
+}
+.menu{
+  position: absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-item{
+  text-align: center;
+  margin:2rem 0;
+}
+
+.menu-link{
+  font-family: 'Mulish','Courier New', Courier, monospace;
+  font-size:2rem;
+  line-height: 3rem;
+  color:#555;
+  transition: all 0.8s ease-out
+}
+
+
+.menu-link:hover{
+  color:#fff;
+  background-color:#7F00FF;
+  width:100%;
+  display: block;
+  padding: 0 3rem;
+  border-radius: 0.5rem;
+}
+
+.social-media{
+  position: absolute;
+  bottom: 2rem;
+  width:100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-media i{
+  height:3.5rem;
+  font-size:2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-facebook{
+   color:#3b5998;
+   height: 2rem;  
+}
+
+.fa-linkedin{
+  color:#0e76a8;
+}
+
+.fa-github-square{
+  color:black;
+}
+
+.social-media i:hover{
+  opacity:0.8;
+}
+
+}
 
