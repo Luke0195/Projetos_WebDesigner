@@ -1,6 +1,6 @@
 let hamburger = document.querySelector('.hamburger');
 
 hamburger.addEventListener('click', function(){
-   document.querySelector('.sidebar').classList.toggle('showmenu');
+   document.querySelector('.container').classList.toggle('showmenu');
     
 });

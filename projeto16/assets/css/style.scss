@@ -47,6 +47,10 @@ body {
    box-shadow:  0.1rem 0.1rem 1px black;
  }
 
+ .showmenu .hamburger{
+   right:18rem;
+ }
+
  
 
   
@@ -175,8 +179,7 @@ header {
 
 
 
-.sidebar.showmenu{
-  
+.showmenu .sidebar{
   right:0;
 }
 .menu{
@@ -242,5 +245,5 @@ header {
   opacity:0.8;
 }
 
-}
+
 
